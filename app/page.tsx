@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const PASSWORD = "macskalover"; // 🔑 Itt tudod beállítani a belépési jelszót
 
@@ -7,6 +8,7 @@ export default function HomePage() {
   const [input, setInput] = useState("");
   const [accessGranted, setAccessGranted] = useState(false);
   const [showCards, setShowCards] = useState(false);
+  const t = useTranslations("Home");
 
   useEffect(() => {
     if (accessGranted) {
@@ -18,7 +20,7 @@ export default function HomePage() {
     if (input === PASSWORD) {
       setAccessGranted(true);
     } else {
-      alert("Hibás jelszó!");
+      alert(t("wrongPassword"));
     }
   };
 
@@ -26,19 +28,19 @@ export default function HomePage() {
     return (
       <main className="min-h-screen flex items-center justify-center bg-red-50">
         <div className="bg-white shadow p-6 rounded-xl flex flex-col items-center gap-4">
-          <h1 className="text-xl font-semibold text-red-600">Belépés</h1>
+          <h1 className="text-xl font-semibold text-red-600">{t("enterPassword")}</h1>
           <input
             type="password"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             className="border border-gray-300 px-4 py-2 rounded"
-            placeholder="Írd be a jelszót"
+            placeholder={t("passwordPlaceholder")}
           />
           <button
             onClick={handleSubmit}
             className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700"
           >
-            Belépés
+            {t("enter")}
           </button>
         </div>
       </main>
@@ -48,7 +50,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-red-50 flex flex-col items-center justify-start p-4 transition-all">
       <h1 className="text-4xl font-bold text-red-700 my-4">CatTinder</h1>
-      <p className="text-lg text-gray-700 mb-6">Find the perfect match for your cat</p>
+      <p className="text-lg text-gray-700 mb-6">{t("subtitle")}</p>
 
       <div className="flex flex-col gap-4 w-full max-w-md">
         {[1, 2, 3].map((num) => (
@@ -64,8 +66,8 @@ export default function HomePage() {
               className="w-full h-48 object-cover rounded-t-xl"
             />
             <div className="p-3">
-              <h2 className="text-xl font-semibold text-red-600">Mittens {num}</h2>
-              <p className="text-sm text-gray-500">Persian • Female • 2 yrs</p>
+              <h2 className="text-xl font-semibold text-red-600">{t("catName", { num })}</h2>
+              <p className="text-sm text-gray-500">{t("catDesc")}</p>
             </div>
           </div>
         ))}
@@ -73,10 +75,10 @@ export default function HomePage() {
 
       <div className="mt-6 flex gap-4">
         <button className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition hover:scale-105">
-          Login
+          {t("login")}
         </button>
         <button className="border border-red-600 text-red-600 px-6 py-2 rounded-lg hover:bg-red-100 transition hover:scale-105">
-          Register
+          {t("register")}
         </button>
       </div>
     </main>
