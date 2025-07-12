@@ -1,14 +1,11 @@
+// components/LanguageSwitcher.tsx
 "use client";
 
 import { usePathname, useRouter } from "next-intl/client";
 import { useLocale } from "next-intl";
 import clsx from "clsx";
 
-const locales = [
-  { code: "en", label: "🇬🇧" },
-  { code: "hu", label: "🇭🇺" },
-  { code: "ru", label: "🇷🇺" }
-];
+const locales = ["en", "hu", "ru"];
 
 export default function LanguageSwitcher() {
   const router = useRouter();
@@ -22,19 +19,23 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="mt-6 flex gap-2">
-      {locales.map(({ code, label }) => (
+      {locales.map((locale) => (
         <button
-          key={code}
-          onClick={() => handleLocaleChange(code)}
+          key={locale}
+          onClick={() => handleLocaleChange(locale)}
           className={clsx(
-            "w-10 h-10 text-xl rounded-full border flex items-center justify-center transition",
-            code === currentLocale
-              ? "bg-red-600 text-white"
-              : "border-red-600 text-red-600 hover:bg-red-100"
+            "p-1 border rounded transition",
+            locale === currentLocale
+              ? "border-red-600 bg-red-100"
+              : "border-gray-300 hover:bg-gray-100"
           )}
-          title={code.toUpperCase()}
+          title={locale.toUpperCase()}
         >
-          {label}
+          <img
+            src={`/flags/${locale}.png`}
+            alt={locale}
+            className="w-6 h-4 rounded-sm"
+          />
         </button>
       ))}
     </div>
