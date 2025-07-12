@@ -6,7 +6,7 @@ const nextConfig = {
   },
   // 👇 erre szükség van, hogy a middleware működjön
   experimental: {
-    serverActions: true
+    serverActions: {}
   }
 };
 
