@@ -1,5 +1,5 @@
 
-import { unstable_setRequestLocale } from "next-intl/server";
+//  import { unstable_setRequestLocale } from "next-intl/server";
 import "server-only";
 
 export const locales = ["en", "hu", "ru"];
