@@ -1,1 +1,11 @@
-{"Home": {"enterPassword": "Add meg a jelszót", "passwordPlaceholder": "Írd be a jelszót", "enter": "Belépés", "wrongPassword": "Hibás jelszó!", "subtitle": "Találd meg a tökéletes cicapárt!", "catName": "Cica {{num}}", "catDesc": "Szereti a dorombolást és a tonhalat.", "login": "Belépés", "register": "Regisztráció"}}
+{
+  "enterPassword": "Add meg a jelszót",
+  "wrongPassword": "Hibás jelszó",
+  "passwordPlaceholder": "Írd be a jelszót",
+  "enter": "Belépés",
+  "subtitle": "Ismerkedj cuki macskákkal!",
+  "catName": "Cica #{num}",
+  "catDesc": "Egy nagyon aranyos macska",
+  "login": "Belépés",
+  "register": "Regisztráció"
+}
