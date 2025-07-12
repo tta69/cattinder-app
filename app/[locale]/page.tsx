@@ -1,10 +1,6 @@
-
 "use client";
 import { useEffect, useState } from "react";
-import { useMessages } from 'next-intl';
-
-
-
+import { useTranslations } from 'next-intl'; // <- EZ A HELYES IMPORT
 
 const PASSWORD = "macskalover";
 
@@ -12,7 +8,7 @@ export default function HomePage() {
   const [input, setInput] = useState("");
   const [accessGranted, setAccessGranted] = useState(false);
   const [showCards, setShowCards] = useState(false);
-  const t = useTranslations("Home");
+  const t = useTranslations("Home"); // <- ezt már jól használod!
 
   useEffect(() => {
     if (accessGranted) {
@@ -27,7 +23,6 @@ export default function HomePage() {
       alert(t("wrongPassword"));
     }
   };
-
   if (!accessGranted) {
     return (
       <main className="min-h-screen flex items-center justify-center bg-red-50">
