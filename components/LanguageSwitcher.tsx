@@ -1,11 +1,14 @@
-// components/LanguageSwitcher.tsx
 "use client";
 
 import { usePathname, useRouter } from "next-intl/client";
 import { useLocale } from "next-intl";
 import clsx from "clsx";
 
-const locales = ["en", "hu", "ru"];
+const locales = [
+  { code: "en", label: "🇬🇧" },
+  { code: "hu", label: "🇭🇺" },
+  { code: "ru", label: "🇷🇺" }
+];
 
 export default function LanguageSwitcher() {
   const router = useRouter();
@@ -19,18 +22,19 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="mt-6 flex gap-2">
-      {locales.map((locale) => (
+      {locales.map(({ code, label }) => (
         <button
-          key={locale}
-          onClick={() => handleLocaleChange(locale)}
+          key={code}
+          onClick={() => handleLocaleChange(code)}
           className={clsx(
-            "px-4 py-1 border rounded text-sm font-medium transition",
-            locale === currentLocale
+            "w-10 h-10 text-xl rounded-full border flex items-center justify-center transition",
+            code === currentLocale
               ? "bg-red-600 text-white"
               : "border-red-600 text-red-600 hover:bg-red-100"
           )}
+          title={code.toUpperCase()}
         >
-          {locale.toUpperCase()}
+          {label}
         </button>
       ))}
     </div>
