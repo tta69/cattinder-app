@@ -1,4 +1,5 @@
-{
+{"Home": 
+  {
   "enterPassword": "Add meg a jelszót",
   "wrongPassword": "Hibás jelszó",
   "passwordPlaceholder": "Írd be a jelszót",
@@ -8,4 +9,5 @@
   "catDesc": "Egy nagyon aranyos macska",
   "login": "Belépés",
   "register": "Regisztráció"
+}
 }
