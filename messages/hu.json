@@ -1,9 +1,1 @@
-{
-  "title": "CatTinder",
-  "subtitle": "Találd meg cicád tökéletes párját",
-  "login": "Bejelentkezés",
-  "register": "Regisztráció",
-  "breed": "Perzsa",
-  "gender": "Nőstény",
-  "age": "2 éves"
-}
+{ "Home": { "title": "Üdvözöljük a CatTinderen!" } }

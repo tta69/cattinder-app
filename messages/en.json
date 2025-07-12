@@ -1,9 +1,1 @@
-{
-  "title": "CatTinder",
-  "subtitle": "Find the perfect match for your cat",
-  "login": "Login",
-  "register": "Register",
-  "breed": "Persian",
-  "gender": "Female",
-  "age": "2 yrs"
-}
+{ "Home": { "title": "Welcome to CatTinder!" } }
