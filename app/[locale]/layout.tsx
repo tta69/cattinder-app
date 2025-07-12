@@ -1,7 +1,6 @@
 // app/[locale]/layout.tsx
 import { ReactNode } from 'react';
-import { NextIntlClientProvider } from 'next-intl'; // ← Helyes modul
-import { getMessages } from 'next-intl/server'; // ← Csak akkor használd, ha tényleg létezik (v3 felett)
+import { NextIntlClientProvider } from 'next-intl';
 
 type Props = {
   children: ReactNode;
@@ -9,7 +8,14 @@ type Props = {
 };
 
 export default async function LocaleLayout({ children, params: { locale } }: Props) {
-  const messages = await getMessages(); // vagy: getMessages(locale)
+  let messages;
+
+  try {
+    messages = (await import(`../../messages/${locale}.json`)).default;
+  } catch (error) {
+    console.error(`❌ Missing messages for locale: "${locale}"`);
+    return null; // vagy irányíts 404-re: notFound()
+  }
 
   return (
     <html lang={locale}>
