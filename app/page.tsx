@@ -5,22 +5,25 @@ export default function HomePage() {
       <p className="text-lg text-gray-700 mb-6">Find the perfect match for your cat</p>
 
       <div className="flex gap-4 overflow-x-auto w-full max-w-md pb-4">
-        {[1, 2, 3].map((num) => (
-          <div
-            key={num}
-            className="flex-shrink-0 bg-white rounded-xl shadow-md w-64 transform rotate-[${(num % 2 === 0) ? "-3deg" : "3deg"}]"
-          >
-            <img
-              src={`/cat${num}.jpg`}
-              alt={`Cat ${num}`}
-              className="w-full h-48 object-cover rounded-t-xl"
-            />
-            <div className="p-3">
-              <h2 className="text-xl font-semibold text-red-600">Mittens {num}</h2>
-              <p className="text-sm text-gray-500">Persian • Female • 2 yrs</p>
+        {[1, 2, 3].map((num) => {
+          const rotation = num % 2 === 0 ? "rotate-[-3deg]" : "rotate-[3deg]";
+          return (
+            <div
+              key={num}
+              className={`flex-shrink-0 bg-white rounded-xl shadow-md w-64 transform ${rotation}`}
+            >
+              <img
+                src={`/cat${num}.jpg`}
+                alt={`Cat ${num}`}
+                className="w-full h-48 object-cover rounded-t-xl"
+              />
+              <div className="p-3">
+                <h2 className="text-xl font-semibold text-red-600">Mittens {num}</h2>
+                <p className="text-sm text-gray-500">Persian • Female • 2 yrs</p>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       <div className="mt-6 flex gap-4">
