@@ -1,1 +1,14 @@
-{ "Home": { "title": "Üdvözöljük a CatTinderen!" } }
+
+{
+  "Home": {
+    "wrongPassword": "Hibás jelszó!",
+    "enterPassword": "Írd be a jelszót",
+    "passwordPlaceholder": "Jelszó",
+    "enter": "Belépés",
+    "subtitle": "Találd meg a cicás lelkitársad!",
+    "catName": "{num}. cica",
+    "catDesc": "Aranyos és játékos társ.",
+    "login": "Bejelentkezés",
+    "register": "Regisztráció"
+  }
+}

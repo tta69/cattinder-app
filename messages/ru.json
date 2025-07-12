@@ -1,1 +1,14 @@
-{ "Home": { "title": "Добро пожаловать в CatTinder!" } }
+
+{
+  "Home": {
+    "wrongPassword": "Неверный пароль!",
+    "enterPassword": "Введите пароль",
+    "passwordPlaceholder": "Пароль",
+    "enter": "Войти",
+    "subtitle": "Найди свою кошачью любовь!",
+    "catName": "Кошка номер {num}",
+    "catDesc": "Милый и игривый друг.",
+    "login": "Войти",
+    "register": "Регистрация"
+  }
+}

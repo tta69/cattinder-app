@@ -1,12 +1,15 @@
-import 'server-only';
 
-const dictionaries = {
-  en: () => import('@/messages/en.json').then((module) => module.default),
-  hu: () => import('@/messages/hu.json').then((module) => module.default),
-  ru: () => import('@/messages/ru.json').then((module) => module.default)
-};
+import { unstable_setRequestLocale } from "next-intl/server";
+import "server-only";
+
+export const locales = ["en", "hu", "ru"];
 
 export async function getMessages(locale: string) {
-  if (!dictionaries[locale]) return null;
-  return dictionaries[locale]();
+  unstable_setRequestLocale(locale);
+  try {
+    return (await import(`../messages/${locale}.json`)).default;
+  } catch (error) {
+    console.error("Failed to load messages for locale:", locale);
+    return null;
+  }
 }
