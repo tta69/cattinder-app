@@ -1,5 +1,5 @@
 // app/[locale]/layout.tsx
-import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { ReactNode } from 'react';
 
 type Props = {
