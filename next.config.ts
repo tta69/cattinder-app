@@ -1,10 +1,11 @@
-// next.config.ts
 const nextConfig = {
-
-  // 👇 erre szükség van, hogy a middleware működjön
   experimental: {
-    serverActions: {}
-  }
+    serverActions: {},
+  },
+  i18n: {
+    locales: ['en', 'hu', 'ru'],
+    defaultLocale: 'en',
+  },
 };
 
 module.exports = nextConfig;
