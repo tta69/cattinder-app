@@ -1,12 +1,49 @@
 "use client";
 import { useEffect, useState } from "react";
 
+const PASSWORD = "macskalover"; // 🔑 Itt tudod beállítani a belépési jelszót
+
 export default function HomePage() {
+  const [input, setInput] = useState("");
+  const [accessGranted, setAccessGranted] = useState(false);
   const [showCards, setShowCards] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setShowCards(true), 100);
-  }, []);
+    if (accessGranted) {
+      setTimeout(() => setShowCards(true), 100);
+    }
+  }, [accessGranted]);
+
+  const handleSubmit = () => {
+    if (input === PASSWORD) {
+      setAccessGranted(true);
+    } else {
+      alert("Hibás jelszó!");
+    }
+  };
+
+  if (!accessGranted) {
+    return (
+      <main className="min-h-screen flex items-center justify-center bg-red-50">
+        <div className="bg-white shadow p-6 rounded-xl flex flex-col items-center gap-4">
+          <h1 className="text-xl font-semibold text-red-600">Belépés</h1>
+          <input
+            type="password"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            className="border border-gray-300 px-4 py-2 rounded"
+            placeholder="Írd be a jelszót"
+          />
+          <button
+            onClick={handleSubmit}
+            className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700"
+          >
+            Belépés
+          </button>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="min-h-screen bg-red-50 flex flex-col items-center justify-start p-4 transition-all">
@@ -35,10 +72,10 @@ export default function HomePage() {
       </div>
 
       <div className="mt-6 flex gap-4">
-        <button className="bg-red-600 text-white px-6 py-2 rounded-lg transition-transform transform hover:scale-105 hover:bg-red-700 shadow">
+        <button className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition hover:scale-105">
           Login
         </button>
-        <button className="border border-red-600 text-red-600 px-6 py-2 rounded-lg transition-transform transform hover:scale-105 hover:bg-red-100 shadow">
+        <button className="border border-red-600 text-red-600 px-6 py-2 rounded-lg hover:bg-red-100 transition hover:scale-105">
           Register
         </button>
       </div>
