@@ -1,22 +1,22 @@
 // app/[locale]/layout.tsx
-export const dynamicParams = false; // fontos, így tudja előre a nyelveket!
-export const dynamic = 'force-static'; // vagy 'force-dynamic', ha inkább SSR kell
+import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { ReactNode } from 'react';
 
-import { notFound } from 'next/navigation';
-import { unstable_setRequestLocale } from 'next-intl/server';
-
-const locales = ['en', 'hu', 'ru'];
-
-export default function LocaleLayout({
-  children,
-  params: { locale }
-}: {
-  children: React.ReactNode;
+type Props = {
+  children: ReactNode;
   params: { locale: string };
-}) {
-  if (!locales.includes(locale)) notFound();
+};
 
-  unstable_setRequestLocale(locale);
-  return children;
+export default function LocaleLayout({ children, params: { locale } }: Props) {
+  const messages = useMessages();
+
+  return (
+    <html lang={locale}>
+      <body>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  );
 }
-// dummy content for layout.tsx
