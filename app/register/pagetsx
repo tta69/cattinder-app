@@ -1,0 +1,86 @@
+"use client";
+import { useState } from "react";
+
+export default function RegisterPage() {
+  const [role, setRole] = useState<"buyer" | "breeder" | null>(null);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [accept, setAccept] = useState(false);
+
+  const handleRegister = () => {
+    if (!role || !accept) {
+      alert("Kérlek, válaszd ki a szerepkört és fogadd el a feltételeket.");
+      return;
+    }
+    alert(`Regisztráció: ${name} (${role})`);
+  };
+
+  return (
+    <main className="min-h-screen bg-red-50 flex items-center justify-center p-4">
+      <div className="bg-white shadow-xl rounded-xl p-6 w-full max-w-sm">
+        <h1 className="text-2xl font-bold text-red-600 mb-4 text-center">Regisztráció</h1>
+
+        <div className="flex gap-2 mb-4">
+          <button
+            onClick={() => setRole("breeder")}
+            className={`flex-1 py-2 rounded border ${
+              role === "breeder" ? "bg-red-100 border-red-600" : "border-gray-300"
+            }`}
+          >
+            Tenyésztő
+          </button>
+          <button
+            onClick={() => setRole("buyer")}
+            className={`flex-1 py-2 rounded border ${
+              role === "buyer" ? "bg-red-100 border-red-600" : "border-gray-300"
+            }`}
+          >
+            Vásárló
+          </button>
+        </div>
+
+        <input
+          type="text"
+          placeholder="Név"
+          className="w-full p-3 mb-3 border rounded"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+
+        <input
+          type="email"
+          placeholder="Email"
+          className="w-full p-3 mb-3 border rounded"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <input
+          type="password"
+          placeholder="Jelszó"
+          className="w-full p-3 mb-3 border rounded"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
+        <label className="flex items-center mb-4 text-sm">
+          <input
+            type="checkbox"
+            className="mr-2"
+            checked={accept}
+            onChange={(e) => setAccept(e.target.checked)}
+          />
+          Elfogadom az Általános Szerződési Feltételeket
+        </label>
+
+        <button
+          onClick={handleRegister}
+          className="w-full bg-red-600 text-white py-2 rounded hover:bg-red-700 transition"
+        >
+          Regisztráció
+        </button>
+      </div>
+    </main>
+  );
+}
