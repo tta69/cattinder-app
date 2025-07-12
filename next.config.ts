@@ -1,11 +1,11 @@
+
 const nextConfig = {
   experimental: {
-    serverActions: {},
+    serverActions: {}
   },
   i18n: {
-    locales: ['en', 'hu', 'ru'],
-    defaultLocale: 'en',
-  },
+    locales: ["en", "hu", "ru"],
+    defaultLocale: "en"
+  }
 };
-
 module.exports = nextConfig;

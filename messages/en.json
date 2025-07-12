@@ -1,14 +1,1 @@
-
-{
-  "Home": {
-    "wrongPassword": "Incorrect password!",
-    "enterPassword": "Enter password",
-    "passwordPlaceholder": "Password",
-    "enter": "Enter",
-    "subtitle": "Find your feline soulmate!",
-    "catName": "Cat number {num}",
-    "catDesc": "Adorable and playful companion.",
-    "login": "Login",
-    "register": "Register"
-  }
-}
+{"Home": {"enterPassword": "Enter Password", "passwordPlaceholder": "Enter your password", "enter": "Enter", "wrongPassword": "Wrong password!", "subtitle": "Find your perfect cat match!", "catName": "Cat {{num}}", "catDesc": "Loves cuddles and tuna.", "login": "Login", "register": "Register"}}

@@ -1,14 +1,1 @@
-
-{
-  "Home": {
-    "wrongPassword": "Hibás jelszó!",
-    "enterPassword": "Írd be a jelszót",
-    "passwordPlaceholder": "Jelszó",
-    "enter": "Belépés",
-    "subtitle": "Találd meg a cicás lelkitársad!",
-    "catName": "{num}. cica",
-    "catDesc": "Aranyos és játékos társ.",
-    "login": "Bejelentkezés",
-    "register": "Regisztráció"
-  }
-}
+{"Home": {"enterPassword": "Add meg a jelszót", "passwordPlaceholder": "Írd be a jelszót", "enter": "Belépés", "wrongPassword": "Hibás jelszó!", "subtitle": "Találd meg a tökéletes cicapárt!", "catName": "Cica {{num}}", "catDesc": "Szereti a dorombolást és a tonhalat.", "login": "Belépés", "register": "Regisztráció"}}

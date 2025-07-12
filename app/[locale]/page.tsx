@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
-const PASSWORD = "macskalover"; // 🔑 Itt tudod beállítani a belépési jelszót
+const PASSWORD = "macskalover";
 
 export default function HomePage() {
   const [input, setInput] = useState("");

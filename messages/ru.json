@@ -1,14 +1,1 @@
-
-{
-  "Home": {
-    "wrongPassword": "Неверный пароль!",
-    "enterPassword": "Введите пароль",
-    "passwordPlaceholder": "Пароль",
-    "enter": "Войти",
-    "subtitle": "Найди свою кошачью любовь!",
-    "catName": "Кошка номер {num}",
-    "catDesc": "Милый и игривый друг.",
-    "login": "Войти",
-    "register": "Регистрация"
-  }
-}
+{"Home": {"enterPassword": "Введите пароль", "passwordPlaceholder": "Введите пароль", "enter": "Вход", "wrongPassword": "Неверный пароль!", "subtitle": "Найдите идеального кота!", "catName": "Кот {{num}}", "catDesc": "Любит ласку и тунец.", "login": "Войти", "register": "Регистрация"}}
