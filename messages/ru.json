@@ -3,4 +3,12 @@
     "title": "Добро пожаловать в CatTinder",
     "description": "Найди идеальную пару для своей кошки."
   }
+  "Login": {
+    "title": "Вход",
+    "email": "Эл. почта",
+    "emailPlaceholder": "вы@пример.ру",
+    "password": "Пароль",
+    "passwordPlaceholder": "Ваш пароль",
+    "loginButton": "Войти"
+  }
 }
