@@ -1,13 +1,7 @@
-{"Home": 
-  {
-  "enterPassword": "Add meg a jelszót",
-  "wrongPassword": "Hibás jelszó",
-  "passwordPlaceholder": "Írd be a jelszót",
-  "enter": "Belépés",
-  "subtitle": "Ismerkedj cuki macskákkal!",
-  "catName": "Cica #{num}",
-  "catDesc": "Egy nagyon aranyos macska",
-  "login": "Belépés",
-  "register": "Regisztráció"
-}
+{
+  "Home": {
+    "title": "Üdvözlünk",
+    "login": "Bejelentkezés",
+    "register": "Regisztráció"
+  }
 }
