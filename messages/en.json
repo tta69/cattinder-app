@@ -3,4 +3,12 @@
     "title": "Welcome to CatTinder",
     "description": "Find your purrfect match."
   }
+  "Login": {
+    "title": "Login",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Your password",
+    "loginButton": "Log in"
+  }
 }
