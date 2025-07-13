@@ -3,4 +3,12 @@
     "title": "Üdv a CatTinderen",
     "description": "Találd meg a cicád párját."
   }
+  "Login": {
+    "title": "Bejelentkezés",
+    "email": "Email",
+    "emailPlaceholder": "te@pelda.hu",
+    "password": "Jelszó",
+    "passwordPlaceholder": "A jelszavad",
+    "loginButton": "Belépés"
+  }
 }
