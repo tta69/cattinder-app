@@ -3,4 +3,12 @@
     "title": "Willkommen bei CatTinder",
     "description": "Finden Sie Züchter und Katzen in Ihrer Nähe"
   }
+  "Login": {
+    "title": "Anmeldung",
+    "email": "E-Mail",
+    "emailPlaceholder": "du@beispiel.de",
+    "password": "Passwort",
+    "passwordPlaceholder": "Dein Passwort",
+    "loginButton": "Einloggen"
+  }
 }
