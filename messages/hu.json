@@ -11,4 +11,15 @@
     "passwordPlaceholder": "A jelszavad",
     "loginButton": "Belépés"
   }
+  "Register": {
+  "title": "Fiók létrehozása",
+  "name": "Név",
+  "namePlaceholder": "Teljes neved",
+  "email": "Email",
+  "emailPlaceholder": "te@pelda.hu",
+  "password": "Jelszó",
+  "passwordPlaceholder": "Válassz erős jelszót",
+  "registerButton": "Regisztráció"
+}
+
 }
