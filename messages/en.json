@@ -11,4 +11,15 @@
     "passwordPlaceholder": "Your password",
     "loginButton": "Log in"
   }
+  "Register": {
+  "title": "Create an account",
+  "name": "Name",
+  "namePlaceholder": "Your full name",
+  "email": "Email",
+  "emailPlaceholder": "you@example.com",
+  "password": "Password",
+  "passwordPlaceholder": "Choose a strong password",
+  "registerButton": "Sign up"
+}
+
 }
