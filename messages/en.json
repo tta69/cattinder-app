@@ -22,4 +22,10 @@
   "registerButton": "Sign up"
 }
 
+  "Dashboard": {
+    "title": "Dashboard",
+    "description": "Welcome to your dashboard."
+  }
+
+
 }
