@@ -21,5 +21,8 @@
   "passwordPlaceholder": "Wähle ein sicheres Passwort",
   "registerButton": "Registrieren"
 }
-
+"Dashboard": {
+    "title": "Dashboard",
+    "description": "Willkommen in deinem Dashboard."
+  }
 }
