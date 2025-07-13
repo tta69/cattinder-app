@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480">
+  <path fill="#012169" d="M0 0h640v480H0z"/>
+  <path fill="#FFF" d="M75 0v480h490V0H75z"/>
+  <path fill="#C8102E" d="M195 0v480h250V0H195z"/>
+  <path fill="#FFF" d="M0 180h640v120H0z"/>
+  <path fill="#C8102E" d="M0 210h640v60H0z"/>
+  <path fill="#FFF" d="M0 0l640 480m0-480L0 480" stroke-width="60"/>
+  <path fill="#C8102E" d="M0 0l640 480m0-480L0 480" stroke-width="40"/>
+</svg>
