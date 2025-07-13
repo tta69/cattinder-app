@@ -11,4 +11,15 @@
     "passwordPlaceholder": "Ваш пароль",
     "loginButton": "Войти"
   }
+  "Register": {
+  "title": "Создать аккаунт",
+  "name": "Имя",
+  "namePlaceholder": "Ваше полное имя",
+  "email": "Эл. почта",
+  "emailPlaceholder": "вы@пример.ру",
+  "password": "Пароль",
+  "passwordPlaceholder": "Придумайте надежный пароль",
+  "registerButton": "Зарегистрироваться"
+}
+
 }
