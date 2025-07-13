@@ -3,4 +3,12 @@
     "title": "Bienvenue sur CatTinder",
     "description": "Trouvez des éleveurs et des chats près de chez vous"
   }
+  "Login": {
+    "title": "Connexion",
+    "email": "Email",
+    "emailPlaceholder": "vous@exemple.com",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "Votre mot de passe",
+    "loginButton": "Se connecter"
+  }
 }
