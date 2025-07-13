@@ -21,5 +21,8 @@
   "passwordPlaceholder": "Choisissez un mot de passe sécurisé",
   "registerButton": "S'inscrire"
 }
-
+"Dashboard": {
+    "title": "Tableau de bord",
+    "description": "Bienvenue sur votre tableau de bord."
+  }
 }
