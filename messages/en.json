@@ -26,6 +26,7 @@
     "title": "Dashboard",
     "description": "Welcome to your dashboard."
   }
-
+"Footer": {
+    "copyright": "© 2025 CatTinder. All rights reserved."
 
 }
