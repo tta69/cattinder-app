@@ -12,21 +12,20 @@
     "loginButton": "Log in"
   },
   "Register": {
-  "title": "Create an account",
-  "name": "Name",
-  "namePlaceholder": "Your full name",
-  "email": "Email",
-  "emailPlaceholder": "you@example.com",
-  "password": "Password",
-  "passwordPlaceholder": "Choose a strong password",
-  "registerButton": "Sign up"
-},
-
+    "title": "Create an account",
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Choose a strong password",
+    "registerButton": "Sign up"
+  },
   "Dashboard": {
     "title": "Dashboard",
     "description": "Welcome to your dashboard."
   },
-"Footer": {
+  "Footer": {
     "copyright": "© 2025 CatTinder. All rights reserved."
-
+  }
 }
