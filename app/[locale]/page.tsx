@@ -19,13 +19,6 @@ export default function HomePage() {
   const t = useTranslations('Home');
   const [input, setInput] = useState('');
   const [accessGranted, setAccessGranted] = useState(false);
-  const [showCards, setShowCards] = useState(false);
-
-  useEffect(() => {
-    if (accessGranted) {
-      setTimeout(() => setShowCards(true), 100);
-    }
-  }, [accessGranted]);
 
   const handleSubmit = () => {
     if (input === PASSWORD) {
@@ -58,13 +51,47 @@ export default function HomePage() {
     );
   }
 
-  // Nyelvválasztós főképernyő:
+  // Belépés utáni "igazi" nyitóoldal:
   return (
-    <main className="p-8 text-center">
-      <h1 className="text-3xl font-bold mb-4">{t('title')}</h1>
-      <p className="text-lg mb-6">{t('description')}</p>
+    <main className="min-h-screen bg-red-50 flex flex-col items-center justify-start p-4">
+      <h1 className="text-3xl font-bold text-red-700 my-4">{t('title')}</h1>
+      <p className="text-lg text-gray-700 mb-6">{t('description')}</p>
 
-      <div className="flex justify-center gap-4 mb-8">
+      <div className="mb-6 flex gap-4">
+        <Link href="/login">
+          <button className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition hover:scale-105">
+            {t('login')}
+          </button>
+        </Link>
+        <Link href="/register">
+          <button className="border border-red-600 text-red-600 px-6 py-2 rounded-lg hover:bg-red-100 transition hover:scale-105">
+            {t('register')}
+          </button>
+        </Link>
+      </div>
+
+      <div className="flex flex-col gap-4 w-full max-w-md">
+        {[1, 2, 3].map((num) => (
+          <div
+            key={num}
+            className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition transform hover:scale-105"
+          >
+            <Image
+              src={`/cats/cat${num}.jpg`}
+              alt={`Cat ${num}`}
+              width={400}
+              height={250}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-3">
+              <h2 className="text-xl font-semibold text-red-600">{t('catName', { num })}</h2>
+              <p className="text-sm text-gray-500">{t('catDesc')}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="flex justify-center gap-4 my-8">
         {languages.map(({ code, flag }) => (
           <Link key={code} href={`/${code}`}>
             <Image
