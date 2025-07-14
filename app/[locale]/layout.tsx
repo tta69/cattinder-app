@@ -4,7 +4,6 @@ import { getMessages } from '../../lib/getMessages';
 import MobileMenu from '../../components/MobileMenu';
 import Footer from '../../components/Footer';
 
-
 export default async function LocaleLayout({
   children,
   params: { locale }
@@ -20,11 +19,8 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <MobileMenu />
           {children}
+          <Footer />
         </NextIntlClientProvider>
-         <NextIntlClientProvider locale={locale} messages={messages}>
-    {children}
-  </NextIntlClientProvider>
-  <Footer />
       </body>
     </html>
   );
