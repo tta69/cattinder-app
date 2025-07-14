@@ -32,13 +32,13 @@ export default function MobileMenu() {
       <button
         className="p-2"
         onClick={() => setOpen(!open)}
-        aria-label="Toggle Menu"
+        aria-label={open ? 'Close menu' : 'Open menu'}
       >
         {open ? <X size={28} /> : <Menu size={28} />}
       </button>
 
       {open && (
-        <div className="absolute right-0 top-12 w-56 bg-white border rounded shadow-lg p-4">
+        <div className="absolute right-0 top-12 w-56 bg-white border rounded-lg shadow-xl p-4 animate-fade-in">
           <nav className="flex flex-col gap-3 text-sm">
             <Link href="/" onClick={() => setOpen(false)}>{t('home')}</Link>
             <Link href="/login" onClick={() => setOpen(false)}>{t('login')}</Link>
@@ -53,7 +53,8 @@ export default function MobileMenu() {
                 <button
                   key={code}
                   onClick={() => switchLocale(code)}
-                  className={`opacity-80 hover:opacity-100 transition ${code === locale ? 'ring-2 ring-black' : ''}`}
+                  className={`opacity-80 hover:opacity-100 transition rounded ${code === locale ? 'ring-2 ring-black' : ''}`}
+                  aria-label={`Switch to ${label}`}
                   title={label}
                 >
                   <Image src={flag} alt={label} width={24} height={24} />
