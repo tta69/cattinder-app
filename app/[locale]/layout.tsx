@@ -2,6 +2,8 @@ import { ReactNode } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from '../../lib/getMessages';
 import MobileMenu from '../../components/MobileMenu';
+import Footer from '../../components/Footer';
+
 
 export default async function LocaleLayout({
   children,
