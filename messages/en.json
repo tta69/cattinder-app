@@ -2,7 +2,7 @@
   "Home": {
     "title": "Welcome to CatTinder",
     "description": "Find your purrfect match."
-  }
+  },
   "Login": {
     "title": "Login",
     "email": "Email",
@@ -10,7 +10,7 @@
     "password": "Password",
     "passwordPlaceholder": "Your password",
     "loginButton": "Log in"
-  }
+  },
   "Register": {
   "title": "Create an account",
   "name": "Name",
@@ -20,12 +20,12 @@
   "password": "Password",
   "passwordPlaceholder": "Choose a strong password",
   "registerButton": "Sign up"
-}
+},
 
   "Dashboard": {
     "title": "Dashboard",
     "description": "Welcome to your dashboard."
-  }
+  },
 "Footer": {
     "copyright": "© 2025 CatTinder. All rights reserved."
 
