@@ -19,6 +19,10 @@ export default async function LocaleLayout({
           <MobileMenu />
           {children}
         </NextIntlClientProvider>
+         <NextIntlClientProvider locale={locale} messages={messages}>
+    {children}
+  </NextIntlClientProvider>
+  <Footer />
       </body>
     </html>
   );
