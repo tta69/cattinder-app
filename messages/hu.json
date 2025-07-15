@@ -2,7 +2,7 @@
   "Home": {
     "title": "Üdv a CatTinderen",
     "description": "Találd meg a cicád párját."
-  }
+  },
   "Login": {
     "title": "Bejelentkezés",
     "email": "Email",
@@ -10,7 +10,7 @@
     "password": "Jelszó",
     "passwordPlaceholder": "A jelszavad",
     "loginButton": "Belépés"
-  }
+  },
   "Register": {
   "title": "Fiók létrehozása",
   "name": "Név",
@@ -20,11 +20,11 @@
   "password": "Jelszó",
   "passwordPlaceholder": "Válassz erős jelszót",
   "registerButton": "Regisztráció"
-}
+},
 "Dashboard": {
     "title": "Vezérlőpult",
     "description": "Üdvözöljük a vezérlőpulton."
-  }
+  },
   "Footer": {
     "copyright": "© 2025 CatTinder. All rights reserved."
   }
