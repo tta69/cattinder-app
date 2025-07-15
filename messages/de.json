@@ -2,7 +2,7 @@
   "home": {
     "title": "Willkommen bei CatTinder",
     "description": "Finden Sie Züchter und Katzen in Ihrer Nähe"
-  }
+  },
   "Login": {
     "title": "Anmeldung",
     "email": "E-Mail",
@@ -10,7 +10,7 @@
     "password": "Passwort",
     "passwordPlaceholder": "Dein Passwort",
     "loginButton": "Einloggen"
-  }
+  },
   "Register": {
   "title": "Konto erstellen",
   "name": "Name",
@@ -20,11 +20,11 @@
   "password": "Passwort",
   "passwordPlaceholder": "Wähle ein sicheres Passwort",
   "registerButton": "Registrieren"
-}
+},
 "Dashboard": {
     "title": "Dashboard",
     "description": "Willkommen in deinem Dashboard."
-  }
+  },
   "Footer": {
     "copyright": "© 2025 CatTinder. All rights reserved."
   }
