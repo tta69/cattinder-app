@@ -2,7 +2,7 @@
   "Home": {
     "title": "Добро пожаловать в CatTinder",
     "description": "Найди идеальную пару для своей кошки."
-  }
+  },
   "Login": {
     "title": "Вход",
     "email": "Эл. почта",
@@ -10,7 +10,7 @@
     "password": "Пароль",
     "passwordPlaceholder": "Ваш пароль",
     "loginButton": "Войти"
-  }
+  },
   "Register": {
   "title": "Создать аккаунт",
   "name": "Имя",
@@ -20,11 +20,11 @@
   "password": "Пароль",
   "passwordPlaceholder": "Придумайте надежный пароль",
   "registerButton": "Зарегистрироваться"
-}
+},
 "Dashboard": {
     "title": "Панель управления",
     "description": "Добро пожаловать в панель управления."
-  }
+  },
   "Footer": {
     "copyright": "© 2025 CatTinder. All rights reserved."
   }
