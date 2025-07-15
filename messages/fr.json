@@ -2,7 +2,7 @@
   "home": {
     "title": "Bienvenue sur CatTinder",
     "description": "Trouvez des éleveurs et des chats près de chez vous"
-  }
+  },
   "Login": {
     "title": "Connexion",
     "email": "Email",
@@ -10,7 +10,7 @@
     "password": "Mot de passe",
     "passwordPlaceholder": "Votre mot de passe",
     "loginButton": "Se connecter"
-  }
+  },
   "Register": {
   "title": "Créer un compte",
   "name": "Nom",
@@ -20,11 +20,11 @@
   "password": "Mot de passe",
   "passwordPlaceholder": "Choisissez un mot de passe sécurisé",
   "registerButton": "S'inscrire"
-}
+},
 "Dashboard": {
     "title": "Tableau de bord",
     "description": "Bienvenue sur votre tableau de bord."
-  }
+  },
   "Footer": {
     "copyright": "© 2025 CatTinder. All rights reserved."
   }
